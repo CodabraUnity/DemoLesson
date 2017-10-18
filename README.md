@@ -1,4 +1,4 @@
 # Обсуждение по теме пробного урока
 
 README для внесения каких-то важных изменений в проект, чтобы можно было четко отслеживать что там сейчас находится.
-Для краткого введения в .md файле тыкать [сюда](http://webdesign.ru.net/article/pravila-oformleniya-fayla-readmemd-na-github.html).
+Для краткого введения в ведение .md файлов тыкать [сюда](http://webdesign.ru.net/article/pravila-oformleniya-fayla-readmemd-na-github.html).
