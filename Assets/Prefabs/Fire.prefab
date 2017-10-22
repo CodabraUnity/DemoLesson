@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4123215310591940}
   - component: {fileID: 198768473839757922}
-  - component: {fileID: 114263911409020376}
   - component: {fileID: 199415572283154660}
   - component: {fileID: 136561191034538952}
+  - component: {fileID: 114630597890217010}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Untagged
@@ -37,13 +37,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1108841636102714}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -6.64, y: 3.63, z: 8.84}
+  m_LocalPosition: {x: 1.4467854, y: 1.4474608, z: 2.3662744}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114263911409020376
+--- !u!114 &114630597890217010
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -51,7 +51,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1108841636102714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c8bba3855249341b40896c08c8517d, type: 3}
+  m_Script: {fileID: 11500000, guid: 16e6ace9f538e464ca2dbfdb7e53b185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!136 &136561191034538952
@@ -63,7 +63,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 1.18
+  m_Radius: 1.39
   m_Height: 8.45
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 4.5}
@@ -126,7 +126,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -645716660
+  randomSeed: -2114340257
   InitialModule:
     serializedVersion: 3
     enabled: 1

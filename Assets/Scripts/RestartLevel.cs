@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class RestartLevel : MonoBehaviour
 {
-    void OnTriggerEnter(Collider col)
+    void OnTriggerEnter(Collider other)
     {
-        if (col.CompareTag("Player"))
+        if (other.CompareTag("Player"))
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

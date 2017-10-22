@@ -1,35 +1,36 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using Codabra.Demo;
 
-public class ChestScript : MonoBehaviour
+namespace Codabra.Demo
 {
-    private bool _isOpened = false;
-    private GUIStyle _g = new GUIStyle();
-    private Vector3 _endRotation = new Vector3(60, 0, 0);
-    private float _time = 0f;
-
-    void Start()
+    public class ChestScript : MonoBehaviour
     {
-        var user = GetComponent<Codabra.Demo.EquipUser>();
-        if (user != null) user.Activation.AddListener(() => { _isOpened = true; });
-        _g.fontSize = 24;
-    }
+        private Animator _animator;
+        private bool _isWin = false;
+        [SerializeField]
+        private string _winText = "You Win!";
+        private GUIStyle _style = new GUIStyle();
 
-    void Update()
-    {
-        if (_isOpened && _time <= 1f)
+        private void Start()
         {
-            _time += Time.deltaTime;
-            GameObject.FindWithTag("Up").transform.localEulerAngles = Vector3.Lerp(Vector3.zero, _endRotation, _time);
+            _animator = transform.Find("Treasure_Chest_Up").GetComponent<Animator>();
+            _style.fontSize = 24;
+            _style.alignment = TextAnchor.UpperCenter;
+            _style.font = (Font)Resources.Load("Fonts/Badaboom");
+            _style.fontSize = 100;
+            _style.normal.textColor = Color.white;
         }
-    }
 
-    void OnGUI()
-    {
-        if (_isOpened)
-            GUI.Label(new Rect(100, 100, Screen.width, Screen.height), "YOU WIN!", _g);
+        public void Open()
+        {
+            _isWin = true;
+            _animator.SetBool("Open", true);
+        }
+
+        private void OnGUI()
+        {
+            if (_isWin)
+                GUI.Label(new Rect((Screen.width) / 2 - (Screen.width) / 8, (Screen.height) / 6, (Screen.width) / 4, (Screen.height) / 4), _winText, _style);
+        }
     }
 }

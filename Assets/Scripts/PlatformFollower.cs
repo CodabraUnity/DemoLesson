@@ -33,11 +33,11 @@ namespace Codabra.Demo
         void Update()
         {
             if (_platform != null)
-                if (_platform.mover != null)
+                if (_platform.Mover != null)
                     if (_character != null)
-                        _character.Move(_platform.mover.Speed * Time.deltaTime);
+                        _character.Move(_platform.Mover.Speed * Time.deltaTime);
                     else
-                        transform.Translate(_platform.mover.Speed * Time.deltaTime, Space.World);
+                        transform.Translate(_platform.Mover.Speed * Time.deltaTime, Space.World);
         }
     }
 }

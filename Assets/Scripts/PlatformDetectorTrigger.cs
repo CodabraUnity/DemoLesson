@@ -4,7 +4,7 @@ namespace Codabra.Demo
 {
     public class PlatformDetectorTrigger : MonoBehaviour
     {
-        internal PlatformMover mover;
+        internal PlatformMover Mover;
 
         void Start()
         {

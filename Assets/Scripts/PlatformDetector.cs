@@ -11,7 +11,7 @@ namespace Codabra.Demo
             {
                 var detector = new GameObject("StoneDetector", typeof(PlatformDetectorTrigger), typeof(MeshCollider));
                 detector.transform.parent = transform;
-                detector.GetComponent<PlatformDetectorTrigger>().mover = GetComponent<PlatformMover>();
+                detector.GetComponent<PlatformDetectorTrigger>().Mover = GetComponent<PlatformMover>();
                 detector.GetComponent<MeshCollider>().sharedMesh = mesh.mesh;
             }
 
