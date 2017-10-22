@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba1515b162c92c043b76126cabb3d440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _equip:
+  _inventory:
   - Name: Key
     Count: 1
   _getUsed: 1

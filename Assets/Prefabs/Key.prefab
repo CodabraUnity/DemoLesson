@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d258c8fdc34ad8b4fbb5c4f20e3d6d04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _equip:
+  _inventory:
   - Name: Key
     Count: 1
   _reuseCount: 1
